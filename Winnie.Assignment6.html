@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment6</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="a6style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <h1>Lenning Pizzeria</h1>
+        <h2>Place your order here</h2>
+        <div>
+            <form name="myOrder" action="Winnie.Assignment6.php" method="post">
+                <fieldset>
+                    <legend>User Information</legend>
+                    Name: <input type="text" name="myFName"  maxlength="10" placeholder="First Name" required>
+                    <input type="text" name="myLName" maxlength="10" placeholder="Last Name" required><br>
+                    Phone: <input type="tel" name="myPhone" maxlength="10" placeholder="Phone" required>                
+                </fieldset>
+                <fieldset>
+                    <legend>Your Order</legend>
+                    Pizza: 
+                    <select name="pizza">
+                        <option selected hidden>Choose here</option>
+                        <option value="bbq">Barbecue Chicken</option>
+                        <option value="cheese">Cheese</option>
+                        <option value="pepperoni">Pepperoni</option>
+                        <option value="veg">Garden Vegetable</option>
+                        <option value="custom">Custom</option>
+                    </select><br>
+                    Size: <br>
+                    <input type="radio" name="size" value="small">Small<br>
+                    <input type="radio" name="size" value="medium">Medium<br>
+                    <input type="radio" name="size" value="large">Large<br>
+                    <input type="radio" name="size" value="xlarge">Extra Large<br>
+                    Toppings: <br>
+                    <input type="checkbox" name="topping[]" id="topping" value="pepper">Peppers<br>
+                    <input type="checkbox" name="topping[]" id="topping" value="jalapeno">Jalapeno<br>
+                    <input type="checkbox" name="topping[]" id="topping" value="pineapple">Pineapple<br>
+                    <input type="checkbox" name="topping[]" id="topping" value="mushroom">Mushrooms<br>
+                    Quantity:
+                    <input type="text" name="quantity" placeholder="1-9" maxlength="1">
+                </fieldset>
+                <input type="submit" name="submit" value="Submit">
+            </form>
+        </div>
+
+    </body>
+</html>
